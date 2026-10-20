@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+	<name>com_rkjcomments</name>
+	<creationDate>September 2026</creationDate>
+	<author>Radnička Klasa</author>
+	<authorUrl>https://radnickaklasa.com</authorUrl>
+	<copyright>2026 Radnička Klasa</copyright>
+	<license>GNU/GPL v2 or later</license>
+	<version>1.0.0</version>
+	<description>COM_RKJCOMMENTS_XML_DESCRIPTION</description>
+	<namespace path="src">RadnickaKlasa\Component\Rkjcomments</namespace>
+	<scriptfile>script.php</scriptfile>
+	<administration>
+		<files folder="admin">
+			<folder>services</folder>
+			<folder>src</folder>
+			<folder>tmpl</folder>
+			<folder>language</folder>
+			<filename>access.xml</filename>
+		</files>
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB/com_rkjcomments.ini</language>
+			<language tag="en-GB">en-GB/com_rkjcomments.sys.ini</language>
+			<language tag="sr-YU">sr-YU/com_rkjcomments.ini</language>
+			<language tag="sr-YU">sr-YU/com_rkjcomments.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

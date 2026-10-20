@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="jcomments" method="upgrade">
+	<name>plg_jcomments_rkbadges</name>
+	<creationDate>September 2026</creationDate>
+	<author>Radnička Klasa</author>
+	<authorUrl>https://radnickaklasa.com</authorUrl>
+	<copyright>2026 Radnička Klasa</copyright>
+	<license>GNU/GPL v2 or later</license>
+	<version>1.0.0</version>
+	<description>PLG_JCOMMENTS_RKBADGES_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="rkbadges">rkbadges.php</filename>
+		<folder>language</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/plg_jcomments_rkbadges.ini</language>
+		<language tag="en-GB">en-GB/plg_jcomments_rkbadges.sys.ini</language>
+		<language tag="sr-YU">sr-YU/plg_jcomments_rkbadges.ini</language>
+		<language tag="sr-YU">sr-YU/plg_jcomments_rkbadges.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="levels"
+					type="subform"
+					multiple="true"
+					min="0"
+					max="12"
+					layout="joomla.form.field.subform.repeatable-table"
+					label="PLG_JCOMMENTS_RKBADGES_FIELD_LEVELS_LABEL"
+					description="PLG_JCOMMENTS_RKBADGES_FIELD_LEVELS_DESC"
+				>
+					<form>
+						<field name="icon" type="text" size="8" label="PLG_JCOMMENTS_RKBADGES_FIELD_ICON_LABEL" description="PLG_JCOMMENTS_RKBADGES_FIELD_ICON_DESC" />
+						<field name="name" type="text" label="PLG_JCOMMENTS_RKBADGES_FIELD_NAME_LABEL" />
+						<field name="min" type="number" min="1" step="1" label="PLG_JCOMMENTS_RKBADGES_FIELD_MIN_LABEL" description="PLG_JCOMMENTS_RKBADGES_FIELD_MIN_DESC" />
+					</form>
+				</field>
+				<field name="published_only" type="radio" layout="joomla.form.field.radio.switcher" default="1"
+					label="PLG_JCOMMENTS_RKBADGES_FIELD_PUBLISHED_ONLY_LABEL" description="PLG_JCOMMENTS_RKBADGES_FIELD_PUBLISHED_ONLY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+			<fieldset name="staff" label="PLG_JCOMMENTS_RKBADGES_FIELDSET_STAFF">
+				<field name="staff_groups" type="usergrouplist" multiple="true" default="6,7,8" layout="joomla.form.field.list-fancy-select"
+					label="PLG_JCOMMENTS_RKBADGES_FIELD_STAFF_GROUPS_LABEL" description="PLG_JCOMMENTS_RKBADGES_FIELD_STAFF_GROUPS_DESC" />
+				<field name="staff_icon" type="text" size="8" default="✍️" label="PLG_JCOMMENTS_RKBADGES_FIELD_STAFF_ICON_LABEL" />
+				<field name="staff_name" type="text" default="" label="PLG_JCOMMENTS_RKBADGES_FIELD_STAFF_NAME_LABEL" description="PLG_JCOMMENTS_RKBADGES_FIELD_STAFF_NAME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

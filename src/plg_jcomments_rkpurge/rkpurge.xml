@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="jcomments" method="upgrade">
+	<name>plg_jcomments_rkpurge</name>
+	<creationDate>September 2026</creationDate>
+	<author>Radnička Klasa</author>
+	<authorUrl>https://radnickaklasa.com</authorUrl>
+	<copyright>2026 Radnička Klasa</copyright>
+	<license>GNU/GPL v2 or later</license>
+	<version>1.0.0</version>
+	<description>PLG_JCOMMENTS_RKPURGE_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="rkpurge">rkpurge.php</filename>
+		<folder>language</folder>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/plg_jcomments_rkpurge.ini</language>
+		<language tag="en-GB">en-GB/plg_jcomments_rkpurge.sys.ini</language>
+		<language tag="sr-YU">sr-YU/plg_jcomments_rkpurge.ini</language>
+		<language tag="sr-YU">sr-YU/plg_jcomments_rkpurge.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="categories" type="radio" label="PLG_JCOMMENTS_RKPURGE_CATEGORIES" description="PLG_JCOMMENTS_RKPURGE_CATEGORIES_DESC" default="1" layout="joomla.form.field.radio.switcher">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

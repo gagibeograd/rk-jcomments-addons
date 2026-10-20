@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" method="upgrade">
+	<name>FILES_RKJCOMMENTS</name>
+	<creationDate>October 2026</creationDate>
+	<author>Radnička Klasa</author>
+	<authorUrl>https://radnickaklasa.com</authorUrl>
+	<copyright>2026 Radnička Klasa</copyright>
+	<license>GNU/GPL v2 or later</license>
+	<version>1.0.0</version>
+	<description>FILES_RKJCOMMENTS_XML_DESCRIPTION</description>
+
+	<fileset>
+		<files folder="tpl" target="components/com_jcomments/tpl/rk">
+			<filename>tpl_comment.php</filename>
+			<filename>tpl_form.php</filename>
+			<filename>tpl_list.php</filename>
+			<filename>tpl_tree.php</filename>
+			<filename>style.css</filename>
+			<filename>rk-emoji.js</filename>
+		</files>
+		<files folder="avatars" target="images/jcomment/avatars">
+			<filename>a11.png</filename>
+			<filename>a12.png</filename>
+			<filename>a13.png</filename>
+			<filename>a14.png</filename>
+			<filename>a15.png</filename>
+			<filename>a16.png</filename>
+			<filename>a17.png</filename>
+			<filename>a18.png</filename>
+			<filename>a19.png</filename>
+			<filename>a20.png</filename>
+			<filename>a21.png</filename>
+			<filename>a22.png</filename>
+			<filename>a23.png</filename>
+			<filename>a24.png</filename>
+			<filename>a25.png</filename>
+			<filename>a26.png</filename>
+			<filename>a27.png</filename>
+			<filename>a28.png</filename>
+			<filename>a29.png</filename>
+			<filename>a30.png</filename>
+			<filename>a31.png</filename>
+			<filename>a32.png</filename>
+			<filename>a33.png</filename>
+			<filename>a34.png</filename>
+			<filename>a35.png</filename>
+			<filename>a36.png</filename>
+			<filename>a37.png</filename>
+			<filename>a38.png</filename>
+			<filename>a39.png</filename>
+			<filename>a40.png</filename>
+			<filename>a41.png</filename>
+			<filename>a42.png</filename>
+			<filename>a43.png</filename>
+			<filename>a44.png</filename>
+			<filename>a45.png</filename>
+		</files>
+	</fileset>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/files_rkjcomments.ini</language>
+		<language tag="en-GB">en-GB/files_rkjcomments.sys.ini</language>
+		<language tag="sr-YU">sr-YU/files_rkjcomments.ini</language>
+		<language tag="sr-YU">sr-YU/files_rkjcomments.sys.ini</language>
+	</languages>
+</extension>
